@@ -457,7 +457,7 @@ class C_EncryptedVault:
             #raise VaultError(5,'The vault is already mounted by %s' % vault.computer_name())
         
         # Check to see if the volume on that sparse bundle is actually mounted here
-        from hdiinfo2 import MountedVolume
+        from ev.hdiinfo2 import MountedVolume
         
         volume = MountedVolume(self.local.getBundlePath())
         
